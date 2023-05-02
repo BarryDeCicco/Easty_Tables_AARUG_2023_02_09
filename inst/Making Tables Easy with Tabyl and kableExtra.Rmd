@@ -267,7 +267,7 @@ s <- Hmisc::summaryM(
 
 ## Printing the summary:
 
-``````{r print-summaryM, echo =TRUE, warning=FALSE, include=TRUE}
+```{r print-summaryM, echo =TRUE, warning=FALSE, include=TRUE}
 
 print_summary <- Hmisc::html(s,
             caption = 'Summary of Mtcars data set' , 
