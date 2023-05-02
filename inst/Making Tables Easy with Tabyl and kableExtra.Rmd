@@ -61,7 +61,7 @@ head(mtcars)
 
 ```
 
-## dt:
+## mtcars_trimmed:
 
 ```{r cars_print_2, echo = TRUE}
 mtcars_trimmed <- mtcars[1:5, 1:4]
