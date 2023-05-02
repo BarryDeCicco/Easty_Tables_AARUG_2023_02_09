@@ -232,8 +232,7 @@ mtcars_trimmed                   %>%
 
 ```{r kableExtra_3, echo =TRUE}
 
-mtcars_trimmed
-+%>% 
+mtcars_trimmed %>% 
   kable()              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
