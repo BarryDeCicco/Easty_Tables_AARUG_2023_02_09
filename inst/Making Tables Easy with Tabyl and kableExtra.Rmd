@@ -5,6 +5,7 @@ date: "For ABS Network Presentation, May 3, 2023"
 output:
   ioslides_presentation:
     template: quarterly-report.html
+    
 
 ---
 
@@ -99,6 +100,10 @@ mtcars %>%
 
 ## Adding to the Basic Tables, using 'Adorn':
 
+  * The Adorn commands can be used on data frames
+  
+  * The output of the tabyl() command can be converted to a data frame using
+  the command as.data.frame()
 
 
 ```{r tabyl_2, echo =TRUE}
