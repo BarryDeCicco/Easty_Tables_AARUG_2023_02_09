@@ -51,7 +51,8 @@ for better printing.<p>
 ## Data - mtcars:
 
 *   This presentation will use the 'mtcars' data set built into base R, 
-and a subset (first 5 rows / first 4 columns) which will be called 'dt'.
+and a subset (first 5 rows / first 4 columns) which will be called 
+'mtcars_trimmed'.
 *   This will then be enhanced.
 
 ```{r cars_print_1, echo = TRUE}
@@ -63,8 +64,8 @@ head(mtcars)
 ## dt:
 
 ```{r cars_print_2, echo = TRUE}
-dt <- mtcars[1:5, 1:4]
-print(dt)
+mtcars_trimmed <- mtcars[1:5, 1:4]
+print(mtcars_trimmed)
 
 ```
 
@@ -231,7 +232,8 @@ dt                   %>%
 
 ```{r kableExtra_3, echo =TRUE}
 
-dt                     %>% 
+mtcars_trimmed
++%>% 
   kable()              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
@@ -241,6 +243,23 @@ dt                     %>%
 
 ```
 
+## Formatting Columns and Rows:
+
+The unadjusted printing is bad, and should be improved:
+
+
+```{r kableExtra_4, echo =TRUE}
+
+dt                     %>% 
+  kable()              %>%
+  kable_styling(bootstrap_options = 
+                  c("striped", "hover", "condensed", "responsive",
+                    full_width = F, position = "center")
+                ) %>% 
+  column_spec(1, bold=TRUE)
+
+
+```
 
 ## Other things: 
 
