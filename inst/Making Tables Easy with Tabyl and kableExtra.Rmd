@@ -190,7 +190,7 @@ Here is the simplest, with no options:
 
 
 
-dt %>% 
+mtcars_trimmed %>% 
   kable()
 
 
