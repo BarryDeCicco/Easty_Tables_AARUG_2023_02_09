@@ -244,7 +244,7 @@ mtcars_trimmed %>%
 
 ## Formatting Columns and Rows:
 
-The unadjusted printing is bad, and should be improved:
+The unadjusted printing is bad, and could be improved:
 
 
 ```{r kableExtra_4, echo =TRUE}
@@ -255,8 +255,8 @@ mtcars_trimmed                     %>%
                   c("striped", "hover", "condensed", "responsive",
                     full_width = F, position = "center")
                 ) %>% 
-  column_spec(1, bold=TRUE)
-
+  column_spec(1, width = "3cm",bold = TRUE) %>%   
+  column_spec(2:5, width = "2cm",bold = TRUE) 
 
 ```
 
