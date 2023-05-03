@@ -263,12 +263,11 @@ mtcars_trimmed                     %>%
 
 
 
-## Fixing the Header, and Adding a Slider:
+## Locking the Header
 
-The unadjusted printing is bad, and could be improved:
+This locks the header at the top of the screen (not visible for small tables)
 
-
-```{r kableExtra_4, echo =TRUE}
+```{r kableExtra_5, echo =TRUE}
 
 mtcars_trimmed                     %>% 
   kable()              %>%
