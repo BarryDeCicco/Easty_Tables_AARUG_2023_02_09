@@ -248,6 +248,7 @@ mtcars_trimmed %>%
 The unadjusted printing is bad, and could be improved:
 
 
+
 ```{r kableExtra_4, echo =TRUE}
 
 mtcars_trimmed                     %>% 
@@ -260,6 +261,8 @@ mtcars_trimmed                     %>%
   column_spec(2:5, width = "2cm") 
 
 ```
+
+## View the Output Better:
 
 ```{r kableExtra_4-and-a-half, echo =FALSE}
 
