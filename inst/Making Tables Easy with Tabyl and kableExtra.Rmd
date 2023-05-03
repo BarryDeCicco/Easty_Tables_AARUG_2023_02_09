@@ -282,7 +282,7 @@ mtcars_trimmed                     %>%
 ```
 
 
-## Column Names
+## Column Headers
 
 You can substitute your columns names for the names in the data frame.
 
@@ -290,24 +290,32 @@ You can substitute your columns names for the names in the data frame.
 
 'escape = FALSE' is an option which renders '<br/>' as a line return.
 
-```{r kableExtra_5, echo =TRUE}
+```{r kableExtra_6, echo =TRUE}
 
-mtcars_trimmed                     %>% 
+mtcars            %>% 
   kable(escape = FALSE,
         col.names = c(
                       "Miles per<br/>Gallon",
                       "Cylinders",
                       "Displacement",
-                      "Horsepower"))              %>%
+                      "Horsepower",
+                      "Drat",
+                      "Weight",
+                      "Quarter Mile<br/>Seconds",
+                      "VS",
+                      "AM",
+                      "Gears",
+                      "Carb"))              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
                     full_width = F, position = "center")
                 ) %>% 
   column_spec(1, width = "3cm",bold = TRUE) %>%   
-  column_spec(2:5, width = "2cm",bold = TRUE) %>% 
+  column_spec(2:11, width = "3cm") %>% 
   kable_styling(fixed_thead = T)
-
+  
 ```
+
 ## Other things: 
 
 - Locking the header row.
