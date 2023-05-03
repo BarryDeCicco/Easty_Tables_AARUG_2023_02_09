@@ -312,7 +312,7 @@ mtcars_trimmed            %>%
 
 ## Other things: 
 
-- Formatting headers (e.g., a higher row covering gruops of variables)
+- Formatting headers (e.g., a higher row covering groups of variables)
 - Controlling the cells (e.g., conditional highlighting).
 - Linking to other locations.
 
