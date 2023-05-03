@@ -335,9 +335,9 @@ mtcars_trimmed            %>%
 
 
 
-## Questions?
+# <center>Questions?<center>
 
-## References:
+# References:
 
  - The janitor package vignette:  https://garthtarr.github.io/meatR/janitor.html
  
