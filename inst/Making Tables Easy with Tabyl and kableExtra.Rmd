@@ -292,26 +292,20 @@ You can substitute your columns names for the names in the data frame.
 
 ```{r kableExtra_6, echo =TRUE}
 
-mtcars            %>% 
+mtcars_trimmed            %>% 
   kable(escape = FALSE,
         col.names = c(
                       "Miles per<br/>Gallon",
                       "Cylinders",
                       "Displacement",
-                      "Horsepower",
-                      "Drat",
-                      "Weight",
-                      "Quarter Mile<br/>Seconds",
-                      "VS",
-                      "AM",
-                      "Gears",
-                      "Carb"))              %>%
+                      "Horsepower"
+                      ))              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
                     full_width = F, position = "center")
                 ) %>% 
   column_spec(1, width = "3cm",bold = TRUE) %>%   
-  column_spec(2:11, width = "3cm") %>% 
+  column_spec(2:5, width = "3cm") %>% 
   kable_styling(fixed_thead = T)
   
 ```
