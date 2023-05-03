@@ -326,12 +326,9 @@ mtcars_trimmed            %>%
 
  - The janitor package vignette:  https://garthtarr.github.io/meatR/janitor.html
  
- - The kableExtra package:  https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#html_only_features
+ - The kableExtra package:  https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
  
- - The Hmisc package: 
-    - Hmisc: https://www.rdocumentation.org/packages/Hmisc/versions/4.7-2
-    - summaryM: Summarize Mixed Data Types vs. Groups:
-    https://www.rdocumentation.org/packages/Hmisc/versions/4.7-2/topics/summaryM
-    
+
+
     
 
