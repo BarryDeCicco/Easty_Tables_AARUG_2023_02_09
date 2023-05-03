@@ -2,8 +2,7 @@
 title: "Making Tables Easy with Tabyl and kableExtra"
 author: "Barry DeCicco"
 date: "For ABS Network Presentation, May 3, 2023"
-output:
-  HTML:
+output:  html_document
 
     
 
