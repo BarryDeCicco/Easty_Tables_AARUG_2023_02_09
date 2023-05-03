@@ -273,7 +273,7 @@ This locks the header at the top of the screen (not visible for small tables)
 
 ```{r kableExtra_5, echo =TRUE}
 
-mtcars_trimmed                     %>% 
+mtcars                     %>% 
   kable()              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
