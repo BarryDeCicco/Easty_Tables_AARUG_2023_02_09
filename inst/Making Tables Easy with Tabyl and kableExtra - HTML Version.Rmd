@@ -194,7 +194,7 @@ Here is the simplest, with no options:
 
 
 
-mtcars_trimmed %>% 
+mtcars %>% 
   kable()
 
 
@@ -212,7 +212,7 @@ mtcars_trimmed %>%
 
 
 
-mtcars_trimmed                   %>% 
+mtcars                   %>% 
   kable()            %>%
   kable_styling()
 
@@ -237,7 +237,7 @@ it does not show up on wider screens.
 
 ```{r kableExtra_3, echo =TRUE}
 
-mtcars_trimmed %>% 
+mtcars %>% 
   kable()              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
@@ -254,7 +254,7 @@ The unadjusted printing is bad, and could be improved:
 
 ```{r kableExtra_4, echo =TRUE}
 
-mtcars_trimmed                     %>% 
+mtcars                     %>% 
   kable()              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
@@ -294,15 +294,23 @@ You can substitute your columns names for the names in the data frame.
 
 'escape = FALSE' is an option which renders '<br/>' as a line return.
 
-```{r kableExtra_6, echo =TRUE}
+```{r kableExtra_6, echo =TRUE, eval=TRUE}
 
-mtcars_trimmed            %>% 
+mtcars            %>% 
   kable(escape = FALSE,
         col.names = c(
                       "Miles per<br/>Gallon",
                       "Cylinders",
                       "Displacement",
-                      "Horsepower"
+                      "Horsepower",
+                      "Rear Axle<br/>Ratio",
+                      "Weight",
+                      "Quarter Mile<br/>
+                      Seconds",
+                      "V vs Straight<br/>Line",
+                      "Automatic vs <br/> Manual Transmission",
+                      "Gear",
+                      "Carburetors"
                       ))              %>%
   kable_styling(bootstrap_options = 
                   c("striped", "hover", "condensed", "responsive",
@@ -312,6 +320,9 @@ mtcars_trimmed            %>%
   column_spec(2:5, width = "3cm") %>% 
   kable_styling(fixed_thead = T)
   
+
+
+
 ```
 
 ## Other things: 
