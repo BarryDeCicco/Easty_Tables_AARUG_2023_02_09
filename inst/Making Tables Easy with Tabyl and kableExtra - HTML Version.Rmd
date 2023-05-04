@@ -31,7 +31,7 @@ library(summarytools)
 ```
 
 
-## This presentation will cover {.flexbox .vcenter}
+# This presentation will cover {.flexbox .vcenter}
 
 
 *   How to make summary tables with the tabyl function of the janitor package.<p>
@@ -40,7 +40,7 @@ library(summarytools)
 *   How to make tables look better with the kable and KableExtra packages.<p>
 
 
-## Janitor and the Tabyl function:
+# Janitor and the Tabyl function:
 
 *   The janitor package has many cleaning functions, plus the tabyl fuction,
 for making tables.<p>
@@ -52,7 +52,7 @@ for better printing.<p>
 
 
 
-## Data - mtcars:
+# Data - mtcars:
 
 *   This presentation will use the 'mtcars' data set built into base R, 
 and a subset (first 5 rows / first 4 columns) which will be called 
@@ -74,15 +74,15 @@ print(mtcars_trimmed)
 ```
 
 
-## The janitor package
+# The janitor package
 
-### The janitor does 'clean up' tasks:
+## The janitor does 'clean up' tasks:
 
  - Perfectly format data frame column names;
  - Isolate partially-duplicate records; and
  - Provide quick tabulations (i.e., frequency tables and crosstabs).
 
-### For now, just look at the tabulations, which are done with 'tabyl()'
+## For now, just look at the tabulations, which are done with 'tabyl()'
 
 
 
