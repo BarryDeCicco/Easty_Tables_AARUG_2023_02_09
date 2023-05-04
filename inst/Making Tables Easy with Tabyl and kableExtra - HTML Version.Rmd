@@ -325,6 +325,50 @@ mtcars            %>%
 
 ```
 
+## Titles and Footnotes
+
+You can set up both in separate statements, which give you more flexibility.
+If you parametrize them, then you can have more automatric updating
+
+```{r kableExtra_7, echo =TRUE, eval=TRUE}
+
+ "`r format(Sys.time(), '%d %B, %Y')`"
+
+title_date = format(Sys.time(), '%d %B, %Y')
+
+T1cap <- paste0("<center><strong>TITLE TEXT GOES HERE,<br/>", title_date, "</strong></center>>")
+FN1   <- paste("<strong>FOOTNOTE TEXT GOES HERE/<strong>")
+mtcars            %>% 
+  kable(caption = T1cap, 
+        escape = FALSE,
+        col.names = c(
+                      "Miles per<br/>Gallon",
+                      "Cylinders",
+                      "Displacement",
+                      "Horsepower",
+                      "Rear Axle<br/>Ratio",
+                      "Weight",
+                      "Quarter Mile<br/>
+                      Seconds",
+                      "V vs Straight<br/>Line",
+                      "Automatic vs <br/> Manual Transmission",
+                      "Gear",
+                      "Carburetors"
+                      ))              %>%
+  kable_styling(bootstrap_options = 
+                  c("striped", "hover", "condensed", "responsive",
+                    full_width = F, position = "center")
+                ) %>% 
+  column_spec(1, width = "3cm",bold = TRUE) %>%   
+  column_spec(2:5, width = "3cm") %>% 
+  kable_styling(fixed_thead = T)  %>% 
+  footnote(general = FN1, general_title = "Note: ", footnote_as_chunk = TRUE)
+ 
+
+
+
+```
+
 ## Other things: 
 
 - Formatting headers (e.g., a higher row covering groups of variables)
