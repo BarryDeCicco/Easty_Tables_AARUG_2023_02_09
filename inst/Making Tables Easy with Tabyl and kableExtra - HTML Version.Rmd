@@ -376,7 +376,7 @@ mtcars            %>%
 You can put header rows, including groups of columns.
 
 
-```{r kableExtra_7, echo =TRUE, eval=TRUE}
+```{r kableExtra_8, echo =TRUE, eval=TRUE}
 
  "`r format(Sys.time(), '%d %B, %Y')`"
 
@@ -408,8 +408,10 @@ mtcars            %>%
   column_spec(1, width = "3cm",bold = TRUE) %>%   
   column_spec(2:5, width = "3cm") %>% 
   kable_styling(fixed_thead = T)  %>% 
-  add_header_above(c(" ", " ", "Middle 4 Columns" = 4, 
+  add_header_above(c(" " = 2, "Middle 4 Columns" = 4, 
                      "Last 5 Columns" = 5, " ")) %>% 
+  add_header_above(c(" " = 4, "Group 1" = 5, " " = 3)) %>%
+  add_header_above(c(" "=1,"Everything" = 11)) %>% 
   footnote(general = FN1, general_title = "Note: ", footnote_as_chunk = TRUE)
  
 
