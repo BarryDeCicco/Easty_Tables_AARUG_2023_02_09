@@ -581,7 +581,12 @@ mtcars            %>%
 
 ```
 
+# Using Kable with Other Packages.
 
+Some other packages have an '...2kable() function to allow you to use kable:
+
+xtable2able()
+For the 'table' package, use toKable()
 
 ## Other things: 
 
